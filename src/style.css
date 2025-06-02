@@ -63,6 +63,11 @@
   opacity: 0.5;
 }
 
+#IzK_ScreenLocker > div.body p#status.incorrect-password {
+  color: var(--clr-red-fg);
+  opacity: 1;
+}
+
 #IzK_ScreenLocker > div.body div.password-field {
   background-color: var(--button-glass-bg);
   border-radius: 10px;
