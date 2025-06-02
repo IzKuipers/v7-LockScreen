@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "name": "Screen locker",
+    "version": "1.0.0",
+    "author": "Izaak Kuipers",
+    "icon": "LockIcon"
+  },
+  "position": {
+    "centered": true,
+    "x": 0,
+    "y": 0
+  },
+  "size": {
+    "w": -1,
+    "h": -1
+  },
+  "minSize": {
+    "w": -1,
+    "h": -1
+  },
+  "maxSize": {
+    "w": -1,
+    "h": -1
+  },
+  "state": {
+    "minimized": false,
+    "maximized": false,
+    "headless": true,
+    "resizable": false,
+    "fullscreen": true
+  },
+  "controls": {
+    "minimize": false,
+    "maximize": false,
+    "close": true
+  },
+  "glass": true,
+  "hidden": false,
+  "core": true,
+  "entrypoint": "main.js",
+  "id": "IzK_ScreenLocker"
+}
