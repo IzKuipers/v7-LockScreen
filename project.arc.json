@@ -3,7 +3,7 @@
     "name": "Screen locker",
     "description": "Lock your ArcOS session",
     "author": "Izaak Kuipers",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "installLocation": "U:/Applications/IzK_ScreenLocker",
     "appId": "IzK_ScreenLocker"
   },
