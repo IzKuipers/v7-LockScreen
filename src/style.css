@@ -7,6 +7,9 @@
   translate: 0 -100px;
   transition: opacity 0.3s, visibility 0.3s, translate 0.3s;
   display: block !important;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #IzK_ScreenLocker.activated {
