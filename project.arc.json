@@ -10,6 +10,6 @@
   "outFile": "IzK_ScreenLocker.arc",
   "payloadDir": "src",
   "devPort": 3128,
-  "buildHash": "f215368e",
+  "buildHash": "932108b0",
   "noHotRelaunch": false
 }
