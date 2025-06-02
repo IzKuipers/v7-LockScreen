@@ -6,7 +6,13 @@ class proc extends ThirdPartyAppProcess {
   }
 
   async start() {
-    if (await this.closeIfSecondInstance()) return;
+    if (
+      !this.workingDirectory.startsWith("V:/") &&
+      !navigator.userAgent.toLowerCase().includes("electron")
+    )
+      return false;
+
+    if (await this.closeIfSecondInstance()) return false;
   }
 
   async render() {
@@ -58,6 +64,7 @@ class proc extends ThirdPartyAppProcess {
     );
 
     actions?.append(this.lockButton);
+    env.set("izk_screenlocker_pid", this.pid);
   }
 
   async validate() {
