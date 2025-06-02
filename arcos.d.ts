@@ -4003,6 +4003,7 @@ declare global {
       runApp: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
       runAppDirect: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
       loadHtml: (path: string) => Promise<string>;
+      loadDirect: (path: string) => Promise<void>;
   };
 
   export type AxiosHeaderValue = AxiosHeaders | string | string[] | number | boolean | null;
@@ -4628,7 +4629,9 @@ declare global {
       $METADATA: string;
       load: (path: string) => Promise<any>;
       runApp: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
+      runAppDirect: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
       loadHtml: (path: string) => Promise<string | undefined>;
+      loadDirect: (path: string) => Promise<string | undefined>;
       Server: AxiosInstance;
       Debug: (m: any) => void;
       dayjs: (s: string) => dayjs.Dayjs;
@@ -5680,7 +5683,11 @@ declare global {
 
   export const runApp: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
 
+  export const runAppDirect: (process: typeof ThirdPartyAppProcess, metadataPath: string, parentPid?: number, ...args: any[]) => Promise<ThirdPartyAppProcess | undefined>;
+
   export const loadHtml: (path: string) => Promise<string | undefined>;
+
+  export const loadDirect: (path: string) => Promise<string | undefined>;
 
   export const Server: AxiosInstance;
 

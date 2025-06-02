@@ -11,6 +11,7 @@ class proc extends ThirdPartyAppProcess {
 
   async render() {
     this.win = this.getWindow();
+    this.win.style.display = "none";
 
     const publicUserInfo = await this.userDaemon.getPublicUserInfoOf(
       this.userDaemon.userInfo._id
