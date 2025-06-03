@@ -100,6 +100,10 @@ class proc extends ThirdPartyAppProcess {
   show() {
     this.win.classList.add("activated");
     this.userDaemon._elevating = true;
+
+    setTimeout(() => {
+      this.passwordField?.focus();
+    }, 100);
   }
 
   async hide() {
