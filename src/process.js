@@ -6,12 +6,6 @@ class proc extends ThirdPartyAppProcess {
   }
 
   async start() {
-    if (
-      !this.workingDirectory.startsWith("V:/") &&
-      !navigator.userAgent.toLowerCase().includes("electron")
-    )
-      return false;
-
     if (await this.closeIfSecondInstance()) return false;
   }
 
