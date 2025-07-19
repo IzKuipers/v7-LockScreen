@@ -3,13 +3,16 @@
     "name": "Screen locker",
     "description": "Lock your ArcOS session",
     "author": "Izaak Kuipers",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "installLocation": "U:/Applications/IzK_ScreenLocker",
-    "appId": "IzK_ScreenLocker"
+    "appId": "IzK_ScreenLocker",
+    "store": {
+      "image": "lock.svg"
+    }
   },
   "outFile": "IzK_ScreenLocker.arc",
   "payloadDir": "src",
   "devPort": 3128,
-  "buildHash": "932108b0",
+  "buildHash": "ed497741",
   "noHotRelaunch": false
 }

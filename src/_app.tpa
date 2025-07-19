@@ -1,9 +1,9 @@
 {
   "metadata": {
     "name": "Screen locker",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "author": "Izaak Kuipers",
-    "icon": "LockIcon"
+    "icon": "@local:lock.svg"
   },
   "position": {
     "centered": true,
